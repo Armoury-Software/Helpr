@@ -1,0 +1,7 @@
+<img class="logo-small" 
+     alt="{{ 'branding.helprWithParameter' | translate: { parameter: 'logo' } }}"
+     src="../../../assets/helpr_logo_small.svg"/>
+<h4>{{ 'branding.helpr' | translate }}</h4>
+<ul>
+    <li *ngFor="let link of links"><a [routerLink]="link.routerLink">{{ link.title | translate }}</a></li>
+</ul>

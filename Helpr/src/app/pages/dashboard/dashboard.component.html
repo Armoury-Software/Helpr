@@ -1,0 +1,8 @@
+<app-dashboard-navigation></app-dashboard-navigation>
+<div class="dashboard-right">
+    <app-dashboard-top-bar></app-dashboard-top-bar>
+    <div class="dashboard-right-content">
+        <ng-container *ngComponentOutlet="componentSubject$ | async">
+        </ng-container>
+    </div>
+</div>

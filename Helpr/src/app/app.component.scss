@@ -1,0 +1,105 @@
+@import 'src/_colors';
+
+::ng-deep .mat-expansion-panel, ::ng-deep .mat-card {
+  background: white;
+  box-shadow: 0px 3px 1px -1px rgb(0 0 0 / 4%) !important;
+  z-index: 2;
+
+  & > .mat-expansion-panel-header {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background 0.25s;
+
+    & > span {
+      color: rgba($primary-dark, 0.8);
+      font-size: 18px;
+      font-weight: 700;
+
+      &:first-child {
+        padding: 20px 10px;
+      }
+
+      span.details {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.6;
+        padding-left: 1em;
+        padding-right: 2em;
+        padding-top: 0.3em;
+      }
+    }
+  }
+
+  .mat-expansion-panel-body {
+    color: $primary-dark;
+
+    & > form {
+      & > span {
+        font-size: 12px;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 2em;
+      }
+  
+      & > .paired-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & > * {
+          &:nth-child(2n) {
+            width: 40%;
+            text-align: right;
+
+            .mat-form-field {
+              width: 100%;
+            }
+          }
+
+          &:nth-child(2n+1) {
+            width: 55%;
+            margin-bottom: 2.5em;
+  
+            b {
+              display: block;
+              font-size: 18px;
+              font-weight: 800;
+            }
+  
+            span {
+              font-size: 12px;
+              opacity: 0.6;
+            }
+          }
+
+          &.full-width {
+            width: 100%;
+            
+            &:nth-child(2n+1) {
+              margin-bottom: 1em;
+            }
+
+            &:nth-child(2n) {
+              margin-bottom: 2.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    border-radius: 4px;
+    box-shadow: 0px 0px 28px 2px rgb(0 0 0 / 4%);
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}

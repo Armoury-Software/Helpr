@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import './colors';
+
+html, body {
+  color: $primary-dark;
+  font-family: 'Poppins', sans-serif !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+
+  & > span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 60%;
+    opacity: 0.6;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}

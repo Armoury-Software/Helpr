@@ -1,0 +1,54 @@
+{
+  "branding": {
+    "creators": "Offered to you by the <a href=\"https://armoury.ro\">Armoury.ro</a> Team",
+    "helpr": "Helpr",
+    "helprWithParameter": "Helpr {{ parameter }}",
+    "helprDescription": "A cute, helping little bot designed to make work easier."
+  },
+  "actions": {
+    "addTo": "Add to {{ platform }}"
+  },
+  "copyright": {
+    "svgbackgrounds": "This website's background was provided by SVGBackgrounds.com."
+  },
+  "navigation": {
+    "pages": {
+      "frontpage": {
+        "about": "About",
+        "contribute": "Contribute",
+        "dashboard": "Dashboard",
+        "features": "Features",
+        "support": "Support us"
+      },
+      "dashboard": {
+        "settings": "Settings",
+        "features": "Features"
+      }
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "features": {
+        "pageSubtitle": "Activate or deactivate features, configure feature settings, check feature statistics and more",
+        "social": {
+          "title": "Social & Automatic messaging features",
+          "beerTime": {
+            "channels": "Channels",
+            "channelToSendTo": "Channel to send to",
+            "channelToDescription": "Helpr will send a message viewable by all members of the channel",
+            "description": "Let your co-workers know that they can stop doing whatever they were doing for the day and have a beer instead.",
+            "message": "Message",
+            "messageToSend": "Message to send",
+            "messageToSendDescription": "Let your co-workers know that they can stop doing whatever they were doing for the day and have a beer instead.",
+            "shortDescription": "Automatically send message at end of working day",
+            "timeOfMessage": "Time of message",
+            "timeOfMessageDescription": "Strictly dependant on the account's timezone.",
+            "title": "Beer time",
+            "usePredefinedMessage": "Use predefined message",
+            "usePredefinedMessageDescription": "Let Helpr use a random message from his predefined list"
+          }
+        }
+      }
+    }
+  }
+}

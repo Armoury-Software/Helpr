@@ -1,0 +1,6 @@
+@import '~@angular/material/theming';
+$helpr-typography: mat-typography-config(
+  $font-family: 'Poppins'
+);
+
+@include angular-material-typography($helpr-typography);

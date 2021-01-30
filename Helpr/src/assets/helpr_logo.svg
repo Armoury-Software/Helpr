@@ -1,0 +1,16 @@
+<svg width="204" height="226" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>Layer 1</title>
+  <line fill="none" stroke-width="9.5" x1="195.5" y1="59.05" x2="195.5" y2="168.05" id="svg_2" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="currentColor"/>
+  <line fill="none" stroke-width="9.5" x1="6.5" y1="64.05" x2="6.5" y2="161.05" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="currentColor"/>
+  <path fill="none" stroke-width="9.5" stroke-opacity="null" d="m3.49999,68.05c0,0 76.33685,-27 196.00003,-6" id="svg_5" stroke="currentColor"/>
+  <path fill="none" stroke-width="9.5" stroke-opacity="null" d="m4.50001,157.05c0,0 86.22221,25 193.99998,7" id="svg_6" stroke="currentColor"/>
+  <path fill="none" stroke-width="8.5" stroke-opacity="null" fill-opacity="null" d="m70.95434,128.85214l0,0c-5.52235,0 -9.99999,-7.60982 -9.99999,-17c0,-9.38898 4.47764,-17 9.99999,-17l0,0c-3.14719,4.01302 -4.99965,10.31163 -4.99965,17s1.85246,12.98578 4.99965,17z" id="svg_12" transform="rotate(90 65.954345703125,111.85214233398439) " stroke="currentColor"/>
+  <path fill="none" stroke-width="8.5" stroke-opacity="null" fill-opacity="null" d="m138.95434,128.85214l0,0c-5.52235,0 -9.99999,-7.60982 -9.99999,-17c0,-9.38898 4.47764,-17 9.99999,-17l0,0c-3.14719,4.01302 -4.99965,10.31163 -4.99965,17s1.85246,12.98578 4.99965,17z" id="svg_14" transform="rotate(90 133.95434570312503,111.85214233398439) " stroke="currentColor"/>
+  <line fill="none" stroke-width="9.5" stroke-opacity="null" x1="99.5" y1="50.05" x2="99.5" y2="27.05" id="svg_16" stroke-linejoin="null" stroke-linecap="null" stroke="currentColor"/>
+  <ellipse fill="none" stroke-width="9.5" stroke-opacity="null" fill-opacity="null" cx="99.5" cy="18.05" id="svg_17" rx="12" ry="12" stroke="currentColor" filter="currentColor"/>
+  <path fill="none" stroke-width="7.5" stroke-opacity="null" fill-opacity="0" d="m104.9499,207.86703l12.6788,-20.70868l12.67879,20.70868l-25.35759,0z" id="svg_22" transform="rotate(-94 117.62869262695311,197.5126953125) " stroke="currentColor"/>
+  <path fill="none" stroke-width="7.5" stroke-opacity="null" fill-opacity="0" d="m72.9499,209.86703l12.6788,-20.70868l12.67879,20.70868l-25.35759,0z" id="svg_23" transform="rotate(86 85.62869262695315,199.51269531249997) " stroke="currentColor"/>
+ </g>
+</svg>

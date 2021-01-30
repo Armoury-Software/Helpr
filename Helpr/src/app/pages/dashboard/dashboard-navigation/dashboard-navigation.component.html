@@ -1,0 +1,14 @@
+<div class="left-navigation-container">
+  <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+    <mat-icon svgIcon="menu_ink"></mat-icon>
+  </button>
+  <div class="left-navigation-links">
+    <a *ngFor="let link of links"
+       [ngClass]="{ 'active': link.active }"
+       [routerLink]="link.routerLink"
+       matTooltip="{{ link.title | translate }}"
+       [matTooltipPosition]="'right'">
+      <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
+    </a>
+  </div>
+</div>

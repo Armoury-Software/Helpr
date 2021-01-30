@@ -1,0 +1,117 @@
+<h1>
+  {{ 'navigation.pages.dashboard.features' | translate }}
+  <span>{{ 'pages.dashboard.features.pageSubtitle' | translate }}</span>
+</h1>
+<div class="overview">
+  <mat-card *ngFor="let overview of overviews">
+    <h1>{{ overview.title }}</h1>
+  </mat-card>
+</div>
+<div class="features-wrapper">
+  <div class="features social">
+    <h2>{{ 'pages.dashboard.features.social.title' | translate }}</h2>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-slide-toggle (click)="$event.stopPropagation()"
+                          [color]="'primary'">
+          {{ 'pages.dashboard.features.social.beerTime.title' | translate }}
+        </mat-slide-toggle>
+        <span class="details">{{ 'pages.dashboard.features.social.beerTime.shortDescription' | translate }}</span>
+      </mat-expansion-panel-header>
+    
+      <ng-template matExpansionPanelContent>
+        <form>
+          <span>{{ 'pages.dashboard.features.social.beerTime.description' | translate }}</span>
+          <div class="paired-list">
+            <!-- Time of message -->
+            <ng-container #timeOfMessage>
+              <div>
+                <b>{{ 'pages.dashboard.features.social.beerTime.timeOfMessage' | translate }}</b>
+                <span>{{ 'pages.dashboard.features.social.beerTime.timeOfMessageDescription' | translate }}</span>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>{{ 'pages.dashboard.features.social.beerTime.timeOfMessage' | translate }}</mat-label>
+                  <input matInput type="time"/>
+                </mat-form-field>
+              </div>
+            </ng-container>
+
+            <!-- Channel to send to -->
+            <ng-container #channelToSendTo>
+              <div>
+                <b>{{ 'pages.dashboard.features.social.beerTime.channelToSendTo' | translate }}</b>
+                <span>{{ 'pages.dashboard.features.social.beerTime.channelToDescription' | translate }}</span>
+              </div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>{{ 'pages.dashboard.features.social.beerTime.channels' | translate }}</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let channel of channels" [value]="channel.title">
+                      {{channel.title}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </ng-container>
+
+            <!-- Use a message from Helpr's predefined list -->
+            <ng-container #messageToSend>
+              <div>
+                <b>{{ 'pages.dashboard.features.social.beerTime.usePredefinedMessage' | translate }}</b>
+                <span>{{ 'pages.dashboard.features.social.beerTime.usePredefinedMessageDescription' | translate }}</span>
+              </div>
+              <div>
+                <mat-checkbox [color]="'primary'"></mat-checkbox>
+              </div>
+            </ng-container>
+
+            <!-- Message to send -->
+            <ng-container #messageToSend>
+              <div class="full-width">
+                <b>{{ 'pages.dashboard.features.social.beerTime.messageToSend' | translate }}</b>
+                <span>{{ 'pages.dashboard.features.social.beerTime.messageToSendDescription' | translate }}</span>
+              </div>
+              <div class="full-width">
+                <mat-form-field appearance="fill">
+                  <mat-label>{{ 'pages.dashboard.features.social.beerTime.message' | translate }}</mat-label>
+                  <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+              </div>
+            </ng-container>
+          </div>
+        </form>
+      </ng-template>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion title
+      </mat-expansion-panel-header>
+    
+      <ng-template matExpansionPanelContent>
+        Some deferred content
+      </ng-template>
+    </mat-expansion-panel>
+  </div>
+  <div class="features deploy">
+    <h2>{{ 'pages.dashboard.features.social.title' | translate }}</h2>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        {{ 'pages.dashboard.features.social.beerTime.title' | translate }}
+      </mat-expansion-panel-header>
+    
+      <ng-template matExpansionPanelContent>
+        Some deferred content
+      </ng-template>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion title
+      </mat-expansion-panel-header>
+    
+      <ng-template matExpansionPanelContent>
+        Some deferred content
+      </ng-template>
+    </mat-expansion-panel>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+@import 'src/_colors';
+
+:host {
+  & > .left-navigation-container {
+    align-items: center;
+    background: white;
+    border-right: 3px solid $border-light;
+    box-shadow: 2px 0px 4px 0px rgb(239 241 246 / 30%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80px;
+
+    & > *:first-child {
+      margin-top: 20px;
+    }
+
+    & > img {
+      filter: invert(13%) sepia(26%) saturate(3267%) hue-rotate(194deg) brightness(85%) contrast(100%);
+      padding: 0 10px 0 0;
+      width: 34px;
+    }
+
+    & > button mat-icon {
+      color: rgba($primary-dark, 0.4);
+    }
+
+    & > .left-navigation-links {
+      padding-top: 20px;
+      width: 100%;
+
+      & > a {
+        align-items: center;
+        color: rgba($primary-dark, 0.6);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        transition: background 0.25s, color 0.25s;
+        width: 100%;
+
+        &:hover, &.active {
+          background: rgba($primary-dark-accent, 0.05);
+          color: $primary-dark-accent;
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          content: ' ';
+          background: $primary-dark-accent;
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+          right: -3px;
+          top: 0;
+          width: 2px;
+
+          transition: opacity 0.25s;
+        }
+      }
+    }
+  }
+}

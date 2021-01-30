@@ -2,8 +2,26 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { HttpClient } from "@angular/common/http";
+import { TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http, environment.i18nPath);
+}
+
 export const environment = {
-  production: false
+  production: false,
+  i18nPath: '/assets/i18n/',
+  translateConfig: {
+    defaultLanguage: 'en',
+    loader: {
+      provide: TranslateLoader,
+      useFactory: HttpLoaderFactory,
+      deps: [HttpClient]
+    },
+    isolate: false
+  }
 };
 
 /*

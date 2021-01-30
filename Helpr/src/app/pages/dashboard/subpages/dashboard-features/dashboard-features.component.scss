@@ -1,0 +1,30 @@
+:host {
+  & > .overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    & > * {
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      height: 320px;
+      justify-content: center;
+    }
+  }
+
+  & > .features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    & > .features {
+      width: 48%;
+
+      & > * {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
