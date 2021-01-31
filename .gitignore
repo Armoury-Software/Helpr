@@ -1,2 +1,3 @@
 
-Helpr_API/build/index.js
+Helpr_API/build/*
+Helpr_API/node_modules/*
