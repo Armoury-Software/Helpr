@@ -11,6 +11,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 export const environment = {
+  baseApiPath: 'http://localhost:8080/',
   production: false,
   i18nPath: '/assets/i18n/',
   translateConfig: {

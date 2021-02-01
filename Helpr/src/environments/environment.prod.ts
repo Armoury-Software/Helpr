@@ -7,6 +7,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 export const environment = {
+  baseApiPath: 'https://helpr-api.armoury.ro/',
   production: true,
   i18nPath: '/assets/i18n/',
   translateConfig: {
