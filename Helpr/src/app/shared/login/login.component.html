@@ -1,0 +1,19 @@
+<div class="login left">
+  <div class="logo-container">
+    <img class="logo" alt="Helpr logo" src="../../../assets/helpr_logo.svg"/>
+    <h1>{{ 'branding.helpr' | translate }}</h1>
+    <p>{{ 'branding.helprDescription' | translate }}</p>
+  </div>
+  <span class="creators" [innerHTML]="'branding.creators' | translate"></span>
+  <span class="background-copyright">{{ 'copyright.svgbackgrounds' | translate }}</span>
+</div>
+<div class="login right">
+  <h1>
+    {{ 'pages.login.title' | translate }}
+    <span>It is required that you connect with your Slack account, so we can know the workspace you need to add our bot to. Also, it will help us know whether you have sufficient access to access your workspace's Helpr dashboard.</span>
+  </h1>
+  <a class="connect-with slack" href="{{ (authUrl$ | async) }}">
+    <img src="../../../assets/slack-logo.svg" alt="{{ 'actions.addTo' | translate: { platform: 'Slack' } }}"/>
+    {{ 'actions.connectWith' | translate: { platform: 'Slack' } }}
+  </a>
+</div>

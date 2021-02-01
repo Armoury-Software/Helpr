@@ -3,7 +3,7 @@
     <img class="logo" alt="Helpr logo" src="../../../assets/helpr_logo.svg"/>
     <h1>{{ 'branding.helpr' | translate }}</h1>
     <p>{{ 'branding.helprDescription' | translate }}</p>
-    <a class="add-to slack" href="https://slack.com/oauth/v2/authorize?client_id=1685369291189.1712320499984&scope=app_mentions:read,channels:history,channels:join,channels:read,chat:write,chat:write.customize,commands,emoji:read,im:history,im:read,mpim:history,groups:history,users:write,reminders:write,reminders:read,reactions:write,reactions:read,incoming-webhook&user_scope=">
+    <a class="add-to slack" href="{{ botUrl$ | async }}">
         <img src="../../../assets/slack-logo.svg" alt="{{ 'actions.addTo' | translate: { platform: 'Slack' } }}"/>
         {{ 'actions.addTo' | translate: { platform: 'Slack' } }}
     </a>

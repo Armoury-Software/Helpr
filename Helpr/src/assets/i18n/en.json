@@ -6,7 +6,8 @@
     "helprDescription": "A cute, helping little bot designed to make work easier."
   },
   "actions": {
-    "addTo": "Add to {{ platform }}"
+    "addTo": "Add to {{ platform }}",
+    "connectWith": "Connect with {{ platform }}"
   },
   "copyright": {
     "svgbackgrounds": "This website's background was provided by SVGBackgrounds.com."
@@ -49,6 +50,9 @@
           }
         }
       }
+    },
+    "login": {
+      "title": "Login"
     }
   }
 }

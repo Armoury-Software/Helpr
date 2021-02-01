@@ -10,11 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { FrontpageModule } from './pages/frontpage/frontpage.module';
+import { LoginComponent } from './shared/login/login.component';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   exports: [TranslateModule],
   imports: [
