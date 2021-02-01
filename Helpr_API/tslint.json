@@ -1,0 +1,79 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-prettier",
+        "tslint-config-airbnb"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "indent": [true, "spaces", 2],
+        "member-access": [true, "check-accessor", "check-constructor", "check-parameter-property"],
+        "member-ordering": [
+          true,
+          {
+            "alphabetize": true,
+            "order": [
+              "public-static-field",
+              "public-instance-field",
+              "public-constructor",
+              "private-static-field",
+              "private-instance-field",
+              "private-constructor",
+              "public-instance-method",
+              "protected-instance-method",
+              "private-instance-method"
+            ]
+          }
+        ],
+        "no-empty": true,
+        "no-unused-variable": true,
+        "ordered-imports": true,
+        "trailing-comma": false,
+        "typedef": [
+          true,
+          "arrow-parameter",
+          "call-signature",
+          "parameter",
+          "property-declaration",
+          "variable-declaration",
+          "member-variable-declaration"
+        ],
+        "typedef-whitespace": {
+          "options": [
+            {
+              "call-signature": "nospace",
+              "index-signature": "nospace",
+              "parameter": "nospace",
+              "property-declaration": "nospace",
+              "variable-declaration": "nospace"
+            },
+            {
+              "call-signature": "onespace",
+              "index-signature": "onespace",
+              "parameter": "onespace",
+              "property-declaration": "onespace",
+              "variable-declaration": "onespace"
+            }
+          ]
+        },
+        "whitespace": {
+          "options": [
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-typecast",
+            "check-type-operator",
+            "check-preblock",
+            "check-postbrace"
+          ]
+        }
+    },
+    "rulesDirectory": []
+}
