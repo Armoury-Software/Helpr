@@ -1,5 +1,4 @@
 import * as bodyparser from 'body-parser';
-import * as dotenv from 'dotenv';
 import express from 'express';
 import * as http from 'http';
 
@@ -7,12 +6,14 @@ import cors from 'cors';
 import debug from 'debug';
 import * as expressWinston from 'express-winston';
 import * as winston from 'winston';
-import { CommonRoutesConfig } from './common/common.routes.config';
-import { DashboardRoutes } from './dashboard/dashboard.routes.config';
-import { EventsRoutes } from './events/events.routes.config';
-import { PublicsRoutes } from './publics/publics.routes.config';
+import { environment } from './environment/environment';
+import { CommonRoutesConfig } from './routes/common/common.routes.config';
+import { DashboardRoutes } from './routes/dashboard/dashboard.routes.config';
+import { EventsRoutes } from './routes/events/events.routes.config';
+import { PublicsRoutes } from './routes/publics/publics.routes.config';
+import databaseService from './services/database.service';
 
-dotenv.config();
+databaseService.initializeFirebaseDatabase(environment.firebase);
 
 const app: express.Application = express();
 const server: http.Server = http.createServer(app);
@@ -21,7 +22,7 @@ const routes: CommonRoutesConfig[] = [];
 const debugLog: debug.IDebugger = debug('app');
 const corsOptions: cors.CorsOptions = {
   credentials: true,
-  origin: process.env.CORS_ORIGIN,
+  origin: environment.cors.origin,
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 

@@ -1,7 +1,6 @@
 import express from 'express';
 
 import { CommonRoutesConfig } from '../common/common.routes.config';
-import slackService from '../services/slack.service';
 
 export class EventsRoutes extends CommonRoutesConfig {
   public constructor(app: express.Application) {
@@ -33,12 +32,6 @@ export class EventsRoutes extends CommonRoutesConfig {
         res.status(200).send(`GET requested for id ${req.params.userId}`);
       })
       .post((req: express.Request, res: express.Response) => {
-        /*slackService
-          .client()
-          .chat.postMessage({
-            channel: req.body.event.channel,
-            text: req.body.event.text,
-          });*/
         res.status(200).send(req.body.challenge);
       })
       .patch((req: express.Request, res: express.Response) => {
